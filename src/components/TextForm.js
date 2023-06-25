@@ -88,7 +88,7 @@ export default function TextForm(props) {
         </h5>
         <h6>
           {0.008 *
-            text.split(" ").filter((ele) => {
+            text.split(/\s+/).filter((ele) => {
               return ele.length !== 0;
             }).length}
           Minutes read
